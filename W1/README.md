@@ -328,7 +328,7 @@ print(x//y)
 | **=      | x //= 2 | x = x // 2 |
 
 
-<br>
+
 ### Comparison Operators
 
 - to compare two values
