@@ -1,5 +1,5 @@
 # :computer: ICT-Club-KMM
-Hello everyone! Here is the site where you can find all our club activities' materials! If there's any bug or better solution, don't hesitate pull requests~:sparkles::sparkles:
+Hello everyone! Here is the site where you can find all our club activities' materials! If there's any bug or better solution, don't hesitate to pull requests~:sparkles::sparkles:
 <br><br>
 
 ## :pushpin: Outline
