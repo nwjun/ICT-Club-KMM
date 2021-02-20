@@ -1,5 +1,12 @@
 # :blue_book: W1_Notes
 
+## :open_file_folder: Notes, Exercise and Practice 
+- [PDF_W1_Notes](https://drive.google.com/file/d/1ZPF-R9N115jEW_Nl9UAG2xa4Rwu3mSUN/view?usp=sharing)
+- [PDF_W1_Exercise](https://drive.google.com/file/d/1ZPF-R9N115jEW_Nl9UAG2xa4Rwu3mSUN/view?usp=sharing)
+- [W1_Exercise_Solution](https://github.com/nwjun/ICT-Club-KMM/blob/main/W1/Exercise/W1_Exercise_Solution.py)
+
+<br>
+
 ## :pushpin: Outline
 - [Python](#python)
 - [Print()](#print)
@@ -64,7 +71,7 @@ a = 6
 b = "6"
 print("Hello world!")
 print(a)
-print("I am " + a + "years old")
+print("I am " + b + "years old")
 print(a*6)
 print(b*6)
 print(a,b)
