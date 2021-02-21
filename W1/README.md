@@ -1,10 +1,13 @@
 # :blue_book: W1_Notes
 
 ## :open_file_folder: Notes, Exercise and Practice 
-- [PDF_W1_Notes](https://drive.google.com/file/d/1ZPF-R9N115jEW_Nl9UAG2xa4Rwu3mSUN/view?usp=sharing)
-- [PDF_W1_Exercise](https://drive.google.com/file/d/1ZPF-R9N115jEW_Nl9UAG2xa4Rwu3mSUN/view?usp=sharing)
+- [PDF_W1_Notes](https://drive.google.com/file/d/1cWyphMFim7_amQ7faWzVeUsZT_Pty-zP/view?usp=sharing)
+- [PDF_W1_Exercise](https://drive.google.com/file/d/1O0NWSnCgmxfBCotKAtGIThSJGWINfqxI/view?usp=sharing)
+- [PDF_W1_Practice](https://drive.google.com/file/d/1cWyphMFim7_amQ7faWzVeUsZT_Pty-zP/view?usp=sharing)
 - [W1_Exercise](https://github.com/nwjun/ICT-Club-KMM/tree/main/W1/Exercise)
 - [W1_Exercise_Solution](https://github.com/nwjun/ICT-Club-KMM/blob/main/W1/Exercise/W1_Exercise_Solution.py)
+- [W1_Practice](https://github.com/nwjun/ICT-Club-KMM/tree/main/W1/Practice)
+- [W1_Practice_Solution](https://github.com/nwjun/ICT-Club-KMM/tree/main/W1/Practice/Solution)
 
 <br>
 
