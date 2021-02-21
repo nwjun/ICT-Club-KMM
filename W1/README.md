@@ -70,21 +70,26 @@ print(*object(s)*, sep=*separator*, end=*end*, file=*file*, flush=*flush*)
 ```python
 a = 6
 b = "6"
+
 print("Hello world!")
+>>>Hello world!
+
 print(a)
-print("I am " + b + "years old")
-print(a*6)
-print(b*6)
-print(a,b)
-print(a,b,sep=",",end="?")
-  
->>>Hello world
 >>>6
+
+print("I am " + b + " years old")
 >>>I am 6 years old
+
+print(a*6)
 >>>36
->>>6 6 6 6 6 6
+
+print(b*6)
+>>>666666
+
+print(a,b)
 >>>6 6
->>>6?
+
+print(a,b,sep=",",end="?")
 >>>6,6?
 ```
 
@@ -102,8 +107,7 @@ a = "His name is "Someone" "
 
 a = "His name is \"Someone\""
 print(a)
-
->>> a = His name is "Someone"
+>>>His name is "Someone"
 
 //alternative
 a = 'His name is "Someone"'
@@ -111,12 +115,12 @@ a = 'His name is "Someone"'
 
 
 
-| Code | Result       |
-| ---- | ------------ |
-| \`   | Single Quote |
-| \\\  | Backslash    |
-| \n   | New line     |
-| \t   | Tab          |
+| Code | Result          |
+| ---- | --------------- |
+| \\`  | Single Quote(') |
+| \\\  | Backslash(\\)   |
+| \n   | New line        |
+| \t   | Tab             |
 
 <br>
 <br>
