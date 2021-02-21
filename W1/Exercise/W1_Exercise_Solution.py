@@ -1,7 +1,7 @@
 #######################################################
 #Lucky number
 print("My lucky number is")
-print("6" * 6)
+print("6 " * 6)
 
 #wear_mask
 print('"Wear a mask"')
