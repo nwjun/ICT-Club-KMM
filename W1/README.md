@@ -178,7 +178,7 @@ print("Hi " + a)
 
 - any name except reserved word (eg: int, return, string)
 
-  
+ ![Python-Keywords](https://github.com/nwjun/ICT-Club-KMM/blob/main/W1/PythonKeywords.png) 
 
 ```python
 x = 6 #type int
