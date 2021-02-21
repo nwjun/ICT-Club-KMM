@@ -20,7 +20,7 @@ print("------")
 #Input
 name = input("name: ")
 fav_colour = input("favourite colour: ")
-print(name + "'s favourite colour is" + fav_colour)
+print(name + "'s favourite colour is " + fav_colour)
 
 
 #######################################################
@@ -28,7 +28,7 @@ print(name + "'s favourite colour is" + fav_colour)
 #no1
 width = float(input("Width: "))
 height = float(input("Height: "))
-area = str(width * height)
+area = str(width * height * 0.5)
 print("Area: " + area)
 
 
