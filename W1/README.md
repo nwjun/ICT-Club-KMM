@@ -68,32 +68,40 @@ print(*object(s)*, sep=*separator*, end=*end*, file=*file*, flush=*flush*)
 | *file*            | Optional. An object with a write method. Default is sys.stdout |
 | *flush*           | Optional. A Boolean, specifying if the output is flushed (True) or buffered (False). Default is False |
 
+- ''+' sign can be use to concatenate (join) **two strings** / **one string + one variable of string type**
 
+:exclamation: Can't concatenate string with number :exclamation:
 
 ```python
 a = 6
 b = "6"
 
 print("Hello world!")
->>>Hello world!
+# Hello world!
 
-print(a)
->>>6
+print(a) # print(6)
+# 6
 
+print("Hi there, " + "nice to meet you!")
 print("I am " + b + " years old")
->>>I am 6 years old
+# Hi there, nice to meet you!
+# I am 6 years old
 
-print(a*6)
->>>36
+print("My lucky number is " + 6)
+# Error! 6 is number, not a string
 
-print(b*6)
->>>666666
+print(a*6) #print(6 * 6)
+# 36
+
+print(b*6) #print("6" * 6)
+# 666666
 
 print(a,b)
->>>6 6
+# 6 6
 
-print(a,b,sep=",",end="?")
->>>6,6?
+print(a,b,sep=",",end="?") 
+#seperate a and b with ',' and end with '?'
+# 6,6?
 ```
 
 <br>
@@ -118,12 +126,14 @@ a = 'His name is "Someone"'
 
 
 
-| Code | Result          |
-| ---- | --------------- |
-| \\`  | Single Quote(') |
-| \\\  | Backslash(\\)   |
-| \n   | New line        |
-| \t   | Tab             |
+| Code                            | Result          |
+| ------------------------------- | --------------- |
+| \\` (in pair of  single quotes) | Single Quote(') |
+| \\" (in pair of double quotes)  | Double Quote(") |
+| \\\                             | Backslash(\\)   |
+| \n                              | New line        |
+| \t                              | Tab             |
+
 
 <br>
 <br>
@@ -146,7 +156,7 @@ input(*prompt*)
 | --------- | ---------------------------------------------------------- |
 | *prompt*  | A String, representing a default message before the input. |
 
-
+:exclamation: input get from user has string type:exclamation:
 
 ```python
 a = input("What's your name?")
@@ -181,14 +191,16 @@ print("Hi " + a)
 
 - any name except reserved word (eg: int, return, string)
 
+
+:exclamation: 'space' is not allowed :exclamation:
+
  ![Python-Keywords](https://github.com/nwjun/ICT-Club-KMM/blob/main/W1/PythonKeywords.png) 
 
 ```python
-x = 6 #type int
-y = "hello world" #type str
-1foobar = 8 #wrong
-_foobar = 8 #correct
-foobar = 8 #correct
+1foobar = 8 # Invalid (1st character cant be digit)
+_foobar = 8 # Valid
+foobar = 8 # Valid
+as = "Hello World" #Invalid, it's a reserved word
 ```
 
 <br>
@@ -200,12 +212,12 @@ foobar = 8 #correct
 
 
 
-| Type     |                     |
-| -------- | ------------------- |
-| Text     | str                 |
-| Numeric  | int, float, complex |
-| Sequence | list, tuple, range  |
-| Boolean  | bool                |
+| Type     |                               |
+| -------- | ----------------------------- |
+| Text     | str                           |
+| Numeric  | int, float (decimal), complex |
+| Sequence | list, tuple, range            |
+| Boolean  | bool (True / False)           |
 
 ```python
 a = 7
@@ -254,7 +266,7 @@ type(h)
 | tuple()      | convert to tuple                                       |
 | list()       | convert any data type to a list                        |
 | dict()       | convert a tuple of order(key, value) into a dictionary |
-| char(number) | converts number to its corresponding ASCII number      |
+| char(number) | converts number to its corresponding **ASCII** number  |
 
 
 
@@ -264,25 +276,27 @@ word = 'Hello'
 tup = (('a',1),('b',2))
 character = 87
 
+print(num*8)
+# 44444444
 a = int(num)
-print(s*8)
->>>32
+print(a*8)
+# 32 because '4' is converted to number 4
 
 b = tuple(word)
 print(b)
->>>('H','e','l','l','o')
+# ('H','e','l','l','o')
 
 c = list(word)
 print(c)
->>>['H','e','l','l','o']
+# ['H','e','l','l','o']
 
 d = dict(tup)
 print(d)
->>>{'a': 1,'b': 2}
+# {'a': 1,'b': 2}
 
 e = char(character)
 print(e)
->>>W
+# W
 ```
 
 <br>
@@ -312,15 +326,15 @@ x = 3
 y = 2
 
 print(x**y)
->>> 9
+# 9
 # 3 to the power of 2 = 9
 
 print(x%y)
->>> 1
+# 1
 # remainder of 3/2 = 1
 
 print(x//y)
->>> 1
+# 1
 # floor(3/2) = floor(1.5) = 1
 ```
 
@@ -360,6 +374,20 @@ print(x//y)
 | >=       | Greater than or equal to | x >= y  |
 | <=       | Less than or equal to    | x <= y  |
 
+```python
+print(7 == 7)
+# True
+
+print(7 != 8)
+# True
+
+print(7 > 8)
+# False
+
+print(7 < 8)
+# True
+```
+
 <br>
 
 ### Logical Operators
@@ -372,6 +400,26 @@ print(x//y)
 | or        | Return True if one of the statements is true | x < 5 or x <4         |
 | not       | Reverse the result                           | not(x < 5 and x < 10) |
 
+```python
+print((5 > 2) and (7 > 5))
+# True
+
+print((5 > 2) and (7 < 5))
+# False
+
+print(not((5 > 2) and (7 < 5)))      
+# True
+
+print((5 > 2) or (7 > 5))
+# True
+
+print((5 > 2) or (7 < 5))
+# True
+
+print(not((5 > 2) or (7 < 5))) 
+# False      
+```
+
 <br>
 
 ### Identity Operators
@@ -381,6 +429,23 @@ print(x//y)
 | is       | Returns True if both variables are the same object     | x is y     |
 | is not   | Returns True if both variables are not the same object | x is not y |
 
+:exclamation: The `==` operator compares the **value** or **equality** of two objects, whereas the Python `is` operator checks whether variable point to the same object in memory.
+
+```python
+x = ["KMM", "ICT"]
+y = ["KMM", "ICT"]
+z = x
+
+print(x is z)
+# True because z is the same object as x
+
+print(x is y)
+# False because x is not the same object as y even they have the same content
+
+print(x == y)
+# True because x and y have same value
+```
+
 <br>
 
 ### Membership Operators
@@ -389,6 +454,18 @@ print(x//y)
 | -------- | ------------------------------------------------------------ | ---------- |
 | in       | Returns True if a sequence with the specified value is present in the object | x in y     |
 | not in   | Returns True if a sequence with the specified value is not present in the object | x not in y |
+
+
+
+```python
+a = "Hello World"
+
+print("Hello" in a)
+# True
+
+print("Hi" in a)
+# False
+```
 
 <br>
 
